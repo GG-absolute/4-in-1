@@ -532,7 +532,7 @@
         </h2>
 
         <!-- Сетка фактов (4 колонки на десктопе, 2 на планшетах/мобилках) -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 sm:gap-y-16 justify-items-center">
+        <div class="gap-10 md:gap-0 grid grid-cols-2 lg:grid-cols-4 sm:gap-y-16 justify-items-center">
             
             <!-- Факт 1: 98% -->
             <div class="flex flex-col items-center max-w-[150px] sm:max-w-[180px] w-full text-center group">
@@ -578,6 +578,123 @@
                 </p>
             </div>
 
+        </div>
+
+    </div>
+</section>
+
+<!-- СЕКЦИЯ RECENT NEWS (С тенями и точным оформлением как на фото) -->
+<section class="w-full py-12 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 antialiased" style="font-family: 'Ubuntu', sans-serif;">
+    <div class="max-w-[1230px] mx-auto">
+        
+        <!-- Заголовок секции -->
+        <h2 class="text-2xl sm:text-3xl md:text-[46px] font-bold text-[#1E212C] text-center mb-10 sm:mb-16 tracking-tight">
+            Recent news
+        </h2>
+
+        <!-- Главная сетка: Две равные колонки на ПК -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            
+            <!-- ЛЕВАЯ КАРТОЧКА: Большая главная новость -->
+            <div class="bg-white rounded shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.1)] transition-all duration-300 flex flex-col group cursor-pointer overflow-hidden">
+                <div class="w-full aspect-[600/360] overflow-hidden bg-gray-100">
+                    <img src="./imgsmuhammad/image (2).jpg" alt="How to Build Climate Change-Resilient Infrastructure" class="w-full h-full object-cover">
+                </div>
+                <!-- Контентный блок с отступами -->
+                <div class="p-6 sm:p-8 flex flex-col justify-between flex-1">
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold text-[#1E212C] mb-2.5 leading-snug group-hover:text-[#FF5A30] transition-colors">
+                            How to Build Climate Change-Resilient Infrastructure
+                        </h3>
+                        
+                        <!-- Метаданные -->
+                        <div class="flex flex-wrap items-center gap-x-2 text-xs text-[#787A80] mb-4 font-normal">
+                            <span>Industry News</span>
+                            <span class="text-gray-300">|</span>
+                            <span>June 24, 2020</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="flex items-center gap-1">
+                                <svg class="w-3.5 h-3.5 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                                </svg>
+                                4 comments
+                            </span>
+                        </div>
+                        
+                        <p class="text-sm text-[#424551] leading-relaxed font-light opacity-90">
+                            Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ПРАВАЯ ЧАСТЬ: Две карточки в вертикальный стек -->
+            <div class="flex flex-col gap-6 justify-between">
+                
+                <!-- Малая новость 1 (Активное состояние с оранжевым заголовком) -->
+                <div class="bg-white rounded shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.1)] transition-all duration-300 flex flex-col cursor-pointer overflow-hidden">
+                    <div class="w-full aspect-[600/230] overflow-hidden bg-gray-100">
+                        <img src="./imgsmuhammad/image (4).jpg" alt="How Construction Can Help Itself" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Контентный блок с отступами -->
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-base sm:text-lg font-bold text-[#FF5A30] mb-2.5 leading-snug">
+                            How Construction Can Help Itself
+                        </h3>
+                        <!-- Метаданные -->
+                        <div class="flex flex-wrap items-center gap-x-2 text-xs text-[#787A80] font-normal">
+                            <span>Innovation</span>
+                            <span class="text-gray-300">|</span>
+                            <span>June 12, 2020</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="flex items-center gap-1">
+                                <svg class="w-3.5 h-3.5 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                                </svg>
+                                No comments
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Малая новость 2 -->
+                <div class="bg-white rounded shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.1)] transition-all duration-300 flex flex-col group cursor-pointer overflow-hidden">
+                    <div class="w-full aspect-[600/230] overflow-hidden bg-gray-100">
+                        <img src="./imgsmuhammad/image (3).jpg" alt="Types of Flooring Materials" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Контентный блок с отступами -->
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-base sm:text-lg font-bold text-[#1E212C] group-hover:text-[#FF5A30] transition-colors mb-2.5 leading-snug">
+                            Types of Flooring Materials
+                        </h3>
+                        <!-- Метаданные -->
+                        <div class="flex flex-wrap items-center gap-x-2 text-xs text-[#787A80] font-normal">
+                            <span>Company News</span>
+                            <span class="text-gray-300">|</span>
+                            <span>December 1, 2019</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="flex items-center gap-1">
+                                <svg class="w-3.5 h-3.5 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                                </svg>
+                                No comments
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Нижняя строка: Кнопка -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 pt-4">
+            <h4 class="text-lg sm:text-xl md:text-2xl font-bold text-[#1E212C] tracking-tight">
+                Explore all our news posts
+            </h4>
+            <a href="#" class="px-8 py-3.5 text-xs font-bold tracking-wider uppercase text-white bg-[#FF5A30] rounded hover:bg-[#e04822] transition-colors shadow-md whitespace-nowrap">
+                View all news
+            </a>
         </div>
 
     </div>
