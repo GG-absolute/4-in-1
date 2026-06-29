@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+
+<!-- НАВИГАЦИЯ (HEADER) -->
+<header class="w-full bg-white z-50 relative antialiased" style="font-family: 'Ubuntu', sans-serif;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+        
+        <!-- Логотип и Главное меню -->
+        <div class="flex items-center gap-12 lg:gap-16">
+            <!-- Логотип Createx -->
+            <a href="#" class="flex items-center text-2xl font-bold tracking-wider text-[#1E212C]">
+<img src="./imgsmuhammad/logo.svg" alt="">
+            </a>
+            
+            <!-- Ссылки на страницы -->
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-bold text-[#424551]">
+                <a href="#" class="text-[#FF5A30] transition-colors">About Us</a>
+                <a href="#" class="hover:text-[#FF5A30] transition-colors">Services</a>
+                <a href="#" class="hover:text-[#FF5A30] transition-colors">Work</a>
+                <a href="#" class="hover:text-[#FF5A30] transition-colors">News</a>
+                <a href="#" class="hover:text-[#FF5A30] transition-colors">Contacts</a>
+            </nav>
+        </div>
+
+        <!-- Контакты справа -->
+        <div class="hidden sm:flex items-center gap-8 text-right">
+            <!-- Телефон -->
+            <div class="flex items-center gap-3">
+                <div class="text-[#FF5A30]">
+                    <svg class="w-5 h-5 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                </div>
+                <div class="text-xs">
+                    <span class="block text-gray-400 font-medium text-start">Call us</span>
+                    <a href="tel:4055550128" class="block font-bold text-[#1E212C] text-sm hover:text-[#FF5A30]">(405) 555-0128</a>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-center gap-3">
+                <div class="text-[#FF5A30]">
+                    <svg class="w-5 h-5 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
+                </div>
+                <div class="text-xs text-left">
+                    <span class="block text-gray-400 font-medium">Talk to us</span>
+                    <a href="mailto:hello@createx.com" class="block font-bold text-[#1E212C] text-sm hover:text-[#FF5A30]">hello@createx.com</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!-- ГЛАВНЫЙ СЛАЙДЕР (HERO SECTION - 100% Ширина) -->
+<section class="w-full relative min-h-[calc(100vh-6rem)] sm:min-h-[640px] bg-cover bg-center flex items-center overflow-hidden antialiased" 
+         style="background-image: linear-gradient(rgba(30, 33, 44, 0), rgba(255, 255, 255, 0)), url('./imgsmuhammad/bg-image.jpg'); font-family: 'Ubuntu', sans-serif;">
+    
+    <!-- Боковые стрелки навигации -->
+         <button class="mt-15 md:mt-0 absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#1E212C] flex items-center justify-center transition-all group z-30">
+             <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+             </svg>
+         </button>
+         <button class="mt-15 md:mt-0 absolute right-4 lg:left-8 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#1E212C] flex items-center justify-center transition-all group z-30 lg:right-8 lg:left-auto">
+             <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+             </svg>
+         </button>
+
+    <!-- Контентная область по центру сетки -->
+    <div class=" max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-20 flex flex-col justify-between min-h-[500px] relative z-10">
+        
+        <!-- Основной текст баннера -->
+        <div class="max-w-2xl space-y-6 mt-6 md:mt-12">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight leading-[1.1]">
+                CREATE<span class="text-[#FF5A30]">X</span><br>CONSTRUCTION
+            </h1>
+            <p class="text-sm sm:text-base text-white font-light leading-relaxed max-w-xl">
+                Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.
+            </p>
+            
+            <!-- Две кнопки -->
+            <div class="pt-4 mt-30 md:0 flex flex-wrap gap-4">
+                <a href="#" class="px-7 py-3.5 text-xs font-bold tracking-wider uppercase text-white border border-white rounded-md hover:bg-white hover:text-[#1E212C] transition-all">
+                    Learn More About Us
+                </a>
+                <a href="#" class="px-8 py-3.5 text-xs font-bold tracking-wider uppercase text-white bg-[#FF5A30] rounded-md hover:bg-[#e04822] transition-all shadow-md">
+                    Submit Request
+                </a>
+            </div>
+        </div>
+
+        <!-- Цифровой переключатель слайдов (Пагинация внизу) -->
+        <div class="w-full max-w-lg pt-16 md:pt-24">
+            <!-- Линия и индикаторы -->
+            <div class="relative w-full h-[2px] bg-white/20 flex justify-between">
+                <!-- Слайд 01 -->
+                <div class="relative -top-10 cursor-pointer group text-left">
+                    <span class="block text-lg font-bold text-white transition-colors">01</span>
+
+                </div>
+                <!-- Слайд 02 -->
+                <div class="relative -top-10 cursor-pointer group text-left opacity-40 hover:opacity-100 transition-opacity">
+                    <span class="block text-lg font-bold text-white">02</span>
+                
+                </div>
+                <!-- Слайд 03 -->
+                <div class="relative -top-10 cursor-pointer group text-left opacity-40 hover:opacity-100 transition-opacity">
+                    <span class="block text-lg font-bold text-white">03</span>
+                
+                </div>
+                <!-- Слайд 04 -->
+                <div class="relative -top-10 cursor-pointer group text-left opacity-40 hover:opacity-100 transition-opacity">
+                    <span class="block text-lg font-bold text-white">04</span>
+                
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
