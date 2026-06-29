@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+
+<!-- НАВИГАЦИЯ (HEADER) -->
+<header class="w-full bg-white z-50 relative antialiased" style="font-family: 'Ubuntu', sans-serif;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+        
+        <!-- Логотип и Главное меню -->
+        <div class="flex items-center gap-12 lg:gap-16">
+            <!-- Логотип Createx -->
+            <a href="#" class="flex items-center text-2xl font-bold tracking-wider text-[#1E212C]">
+<img src="./imgsmuhammad/logo.svg" alt="">
+            </a>
+            
+            <!-- Ссылки на страницы -->
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-bold text-[#424551]">
+                <a href="#" class="text-[#FF5A30] transition-colors">About Us</a>
+                <a href="#" class="hover:text-[#FF5A30] transition-colors">Services</a>
+                <a href="#" class="hover:text-[#FF5A30] transition-colors">Work</a>
+                <a href="#" class="hover:text-[#FF5A30] transition-colors">News</a>
+                <a href="#" class="hover:text-[#FF5A30] transition-colors">Contacts</a>
+            </nav>
+        </div>
+
+        <!-- Контакты справа -->
+        <div class="hidden sm:flex items-center gap-8 text-right">
+            <!-- Телефон -->
+            <div class="flex items-center gap-3">
+                <div class="text-[#FF5A30]">
+                    <svg class="w-5 h-5 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                </div>
+                <div class="text-xs">
+                    <span class="block text-gray-400 font-medium text-start">Call us</span>
+                    <a href="tel:4055550128" class="block font-bold text-[#1E212C] text-sm hover:text-[#FF5A30]">(405) 555-0128</a>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-center gap-3">
+                <div class="text-[#FF5A30]">
+                    <svg class="w-5 h-5 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
+                </div>
+                <div class="text-xs text-left">
+                    <span class="block text-gray-400 font-medium">Talk to us</span>
+                    <a href="mailto:hello@createx.com" class="block font-bold text-[#1E212C] text-sm hover:text-[#FF5A30]">hello@createx.com</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!-- ГЛАВНЫЙ СЛАЙДЕР (HERO SECTION - 100% Ширина) -->
+<section class="w-full relative min-h-[calc(100vh-6rem)] sm:min-h-[640px] bg-cover bg-center flex items-center overflow-hidden antialiased" 
+         style="background-image: linear-gradient(rgba(30, 33, 44, 0), rgba(255, 255, 255, 0)), url('./imgsmuhammad/bg-image.jpg'); font-family: 'Ubuntu', sans-serif;">
+    
+    <!-- Боковые стрелки навигации -->
+         <button class="mt-15 md:mt-0 absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#1E212C] flex items-center justify-center transition-all group z-30">
+             <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+             </svg>
+         </button>
+         <button class="mt-15 md:mt-0 absolute right-4 lg:left-8 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 hover:bg-white text-white hover:text-[#1E212C] flex items-center justify-center transition-all group z-30 lg:right-8 lg:left-auto">
+             <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+             </svg>
+         </button>
+
+    <!-- Контентная область по центру сетки -->
+    <div class=" max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-20 flex flex-col justify-between min-h-[500px] relative z-10">
+        
+        <!-- Основной текст баннера -->
+        <div class="max-w-2xl space-y-6 mt-6 md:mt-12">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight leading-[1.1]">
+                CREATE<span class="text-[#FF5A30]">X</span><br>CONSTRUCTION
+            </h1>
+            <p class="text-sm sm:text-base text-white font-light leading-relaxed max-w-xl">
+                Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.
+            </p>
+            
+            <!-- Две кнопки -->
+            <div class="pt-4 mt-30 md:0 flex flex-wrap gap-4">
+                <a href="#" class="px-7 py-3.5 text-xs font-bold tracking-wider uppercase text-white border border-white rounded-md hover:bg-white hover:text-[#1E212C] transition-all">
+                    Learn More About Us
+                </a>
+                <a href="#" class="px-8 py-3.5 text-xs font-bold tracking-wider uppercase text-white bg-[#FF5A30] rounded-md hover:bg-[#e04822] transition-all shadow-md">
+                    Submit Request
+                </a>
+            </div>
+        </div>
+
+        <!-- Цифровой переключатель слайдов (Пагинация внизу) -->
+        <div class="w-full max-w-lg pt-16 md:pt-24">
+            <!-- Линия и индикаторы -->
+            <div class="relative w-full h-[2px] bg-white/20 flex justify-between">
+                <!-- Слайд 01 -->
+                <div class="relative -top-10 cursor-pointer group text-left">
+                    <span class="block text-lg font-bold text-white transition-colors">01</span>
+
+                </div>
+                <!-- Слайд 02 -->
+                <div class="relative -top-10 cursor-pointer group text-left opacity-40 hover:opacity-100 transition-opacity">
+                    <span class="block text-lg font-bold text-white">02</span>
+                
+                </div>
+                <!-- Слайд 03 -->
+                <div class="relative -top-10 cursor-pointer group text-left opacity-40 hover:opacity-100 transition-opacity">
+                    <span class="block text-lg font-bold text-white">03</span>
+                
+                </div>
+                <!-- Слайд 04 -->
+                <div class="relative -top-10 cursor-pointer group text-left opacity-40 hover:opacity-100 transition-opacity">
+                    <span class="block text-lg font-bold text-white">04</span>
+                
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- СЕКЦИЯ ABOUT / VIDEO (Адаптивная) -->
+<section class="w-full bg-white py-12 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 antialiased" style="font-family: 'Ubuntu', sans-serif;">
+    <div class="max-w-7xl mx-auto text-center">
+        
+        <!-- Заголовок и подзаголовок -->
+        <div class="max-w-3xl mx-auto space-y-3 sm:space-y-4 mb-10 sm:mb-16">
+            <h2 class="text-2xl sm:text-4xl md:text-[46px] font-bold text-[#1E212C] tracking-tight leading-tight">
+                We are Createx Construction Bureau
+            </h2>
+            <p class="text-sm sm:text-base md:text-lg text-[#787A80] font-normal px-2">
+                We are rightfully considered to be the best construction company in the USA.
+            </p>
+        </div>
+
+        <!-- Видео-баннер / Плеер -->
+        <div class="max-w-[1230px] mx-auto aspect-[16/9] md:aspect-[21/9] lg:aspect-[16/7] relative rounded-md overflow-hidden bg-cover bg-center shadow-lg group cursor-pointer"
+             style="background-image: linear-gradient(rgba(30, 33, 44, 0.45), rgba(30, 33, 44, 0.45)), url('./imgsmuhammad/image\ \(30\).png');">
+            
+            <!-- Центральная кнопка Play -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <button type="button" class="w-16 h-16 sm:w-20 sm:h-20 bg-[#FF5A30] text-white rounded-full flex items-center justify-center transition-all duration-300 transform" aria-label="Play video">
+                    <!-- Иконка Play -->
+                    <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-current translate-x-0.5" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Иконка звука в левом нижнем углу -->
+            <div class="absolute left-4 bottom-4 sm:left-6 sm:bottom-6 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20 text-white flex items-center justify-center transition-colors">
+<img src="./imgsmuhammad/idle.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="w-full bg-white py-12 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 antialiased" style="font-family: 'Ubuntu', sans-serif;">
+    <div class="max-w-7xl mx-auto">
+        
+        <div class="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4 mb-12 sm:mb-20">
+            <h2 class="text-2xl sm:text-4xl md:text-[46px] font-bold text-[#1E212C] tracking-tight leading-tight">
+                Our core values
+            </h2>
+            <p class="text-sm sm:text-base md:text-lg text-[#787A80] font-normal px-2">
+                Our mission is to set the highest standards for construction sphere.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 lg:gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+            
+            <div class="flex flex-col items-center pt-6 md:pt-0 px-4 lg:px-8 first:pt-0">
+                <div class="text-[#FF5A30] mb-4 sm:mb-6 flex justify-center items-center">
+<img src="./imgsmuhammad/ic-like.svg" alt="">
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-[#1E212C] mb-2 sm:mb-3">
+                    Quality
+                </h3>
+                <p class="text-xs sm:text-sm text-[#787A80] leading-relaxed max-w-sm font-light">
+                    Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center pt-8 md:pt-0 px-4 lg:px-8">
+                <div class="text-[#FF5A30] mb-4 sm:mb-6 flex justify-center items-center">
+<img src="./imgsmuhammad/ic-hand (1).svg" alt="">
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-[#1E212C] mb-2 sm:mb-3">
+                    Safety
+                </h3>
+                <p class="text-xs sm:text-sm text-[#787A80] leading-relaxed max-w-sm font-light">
+                    Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center pt-8 md:pt-0 px-4 lg:px-8">
+                <div class="text-[#FF5A30] mb-4 sm:mb-6 flex justify-center items-center">
+<img src="./imgsmuhammad/ic-slippers.svg" alt="">
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-[#1E212C] mb-2 sm:mb-3">
+                    Comfort
+                </h3>
+                <p class="text-xs sm:text-sm text-[#787A80] leading-relaxed max-w-sm font-light">
+                    Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- СЕКЦИЯ С ФОРМОЙ ЗАПРОСА (Адаптивная) -->
+<section class="relative md:top-25 w-full py-12 px-4 sm:px-6 lg:px-8 antialiased" style="font-family: 'Ubuntu', sans-serif;">
+    <div class="max-w-7xl mx-auto bg-white p-6 sm:p-10 lg:p-12 rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+        
+        <!-- Заголовок формы -->
+        <h2 class="text-xl sm:text-2xl md:text-[28px] font-bold text-[#1E212C] text-center mb-6 sm:mb-8 tracking-tight">
+            Want to know more? Ask us a question:
+        </h2>
+
+        <!-- Форма -->
+        <form class="flex flex-col lg:flex-row lg:items-end gap-5">
+            
+            <!-- Поле: Name -->
+            <div class="flex-1 min-w-0">
+                <label for="name" class="block text-xs sm:text-sm text-[#424551] mb-2 font-normal">
+                    Name
+                </label>
+                <input type="text" id="name" placeholder="Your name" 
+                       class="w-full h-11 sm:h-12 px-4 bg-[#F4F5F7] border border-[#D7D9DF] rounded-md text-sm text-[#1E212C] placeholder-[#9A9CA5] focus:outline-none focus:border-[#FF5A30] focus:bg-white transition-colors">
+            </div>
+
+            <!-- Поле: Phone -->
+            <div class="flex-1 min-w-0">
+                <label for="phone" class="block text-xs sm:text-sm text-[#424551] mb-2 font-normal">
+                    Phone
+                </label>
+                <input type="tel" id="phone" placeholder="Your phone" 
+                       class="w-full h-11 sm:h-12 px-4 bg-[#F4F5F7] border border-[#D7D9DF] rounded-md text-sm text-[#1E212C] placeholder-[#9A9CA5] focus:outline-none focus:border-[#FF5A30] focus:bg-white transition-colors">
+            </div>
+
+            <!-- Поле: Message -->
+            <div class="flex-[1.5] min-w-0">
+                <label for="message" class="block text-xs sm:text-sm text-[#424551] mb-2 font-normal">
+                    Message
+                </label>
+                <input type="text" id="message" placeholder="Your message" 
+                       class="w-full h-11 sm:h-12 px-4 bg-[#F4F5F7] border border-[#D7D9DF] rounded-md text-sm text-[#1E212C] placeholder-[#9A9CA5] focus:outline-none focus:border-[#FF5A30] focus:bg-white transition-colors">
+            </div>
+
+            <!-- Кнопка отправки: SEND -->
+            <div class="w-full lg:w-auto shrink-0 mt-2 lg:mt-0">
+                <button type="submit" 
+                        class="w-full lg:w-[130px] h-11 sm:h-12 bg-[#FF5A30] hover:bg-[#e04822] text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-md transition-colors shadow-md focus:outline-none">
+                    SEND
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+<!-- СЕКЦИЯ OUR SERVICES (Адаптивная с фоновой картинкой) -->
+<section class="w-full bg-cover bg-center py-12 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 antialiased" 
+         style="background-image: url('./imgsmuhammad/background.jpg'); font-family: 'Ubuntu', sans-serif;">
+    <div class="max-w-7xl mx-auto">
+        
+        <!-- Заголовок и описание -->
+        <div class="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4 mb-12 sm:mb-20">
+            <h2 class="text-2xl sm:text-4xl md:text-[46px] font-bold text-[#1E212C] tracking-tight leading-tight">
+                Our services
+            </h2>
+            <p class="text-xs sm:text-sm md:text-base text-[#787A80] font-normal px-2">
+                Createx Construction Bureau is a construction giant with a full range of construction services.
+            </p>
+        </div>
+
+        <!-- Сетка карточек (4 колонки на ПК, 2 на планшетах, 1 на мобилках) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 sm:mb-16">
+            
+            <!-- Карточка 1: Construction -->
+            <div class="bg-white rounded-md p-6 sm:p-8 flex flex-col items-center justify-center min-h-[260px] sm:min-h-[285px] border border-gray-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.08)] transition-all group cursor-pointer">
+                <div class="text-[#FF5A30] mb-5">
+                    <!-- Иконка Кирпичная стена -->
+<img src="./imgsmuhammad/Vector.png" alt="">
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-[#1E212C] group-hover:text-[#FF5A30] transition-colors text-center">
+                    Construction
+                </h3>
+            </div>
+
+            <!-- Карточка 2: Project Development -->
+            <div class="bg-white rounded-md p-6 sm:p-8 flex flex-col items-center justify-center min-h-[260px] sm:min-h-[285px] border border-gray-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.08)] transition-all group cursor-pointer">
+                <div class="text-[#FF5A30] mb-5">
+                    <!-- Иконка Чертеж / План -->
+<img src="./imgsmuhammad/ic-plan.svg" alt="">
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-[#1E212C] group-hover:text-[#FF5A30] transition-colors text-center">
+                    Project Development
+                </h3>
+            </div>
+
+            <!-- Карточка 3: Interior Design (Выделенная/Hover вариант из макета) -->
+            <div class="relative rounded-md flex flex-col items-center justify-end min-h-[260px] sm:min-h-[285px] overflow-hidden bg-cover bg-center shadow-[0_12px_24px_rgba(0,0,0,0.15)] cursor-pointer"
+                 style="background-image: linear-gradient(rgba(30, 33, 44, 0.75), rgba(30, 33, 44, 0.75)), url('./imgsmuhammad/image.jpg');">
+                <!-- Контент поверх фона карточки -->
+                <div class="p-6 sm:p-8 w-full flex flex-col items-center justify-center absolute inset-0 z-10">
+                    <div class="text-white mb-5">
+                        <!-- Иконка Палитра/Интерьер -->
+<img src="./imgsmuhammad/ic-pantone.png" alt="">
+
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white text-center">
+                        Interior Design
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Карточка 4: Repairs -->
+            <div class="bg-white rounded-md p-6 sm:p-8 flex flex-col items-center justify-center min-h-[260px] sm:min-h-[285px] border border-gray-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.08)] transition-all group cursor-pointer">
+                <div class="text-[#FF5A30] mb-5">
+                    <!-- Иконка Малярный валик -->
+<img src="./imgsmuhammad/ic-painting.svg" alt="">
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-[#1E212C] group-hover:text-[#FF5A30] transition-colors text-center">
+                    Repairs
+                </h3>
+            </div>
+
+        </div>
+
+        <!-- Нижний блок с призывом к действию -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-center sm:text-left">
+            <h4 class="text-lg sm:text-2xl font-bold text-[#1E212C]">
+                Learn more about our services
+            </h4>
+            <!-- Твоя оригинальная кнопка -->
+            <div class="flex flex-wrap gap-4">
+                <a href="#" class="px-8 py-3.5 text-xs font-bold tracking-wider uppercase text-white bg-[#FF5A30] rounded-md hover:bg-[#e04822] transition-all shadow-md whitespace-nowrap">
+                    View Services
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- СЕКЦИЯ SELECTED PROJECTS (Адаптивная) -->
+<section class="w-full bg-white py-12 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 antialiased" style="font-family: 'Ubuntu', sans-serif;">
+    <div class="max-w-7xl mx-auto">
+        
+        <!-- Шапка секции: Заголовок и Стрелки навигации -->
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 sm:mb-14">
+            <h2 class="text-2xl sm:text-3xl md:text-[46px] font-bold text-[#1E212C] tracking-tight leading-tight max-w-2xl">
+                Browse our selected projects<br class="hidden sm:inline"> and learn more about our work
+            </h2>
+            
+            <!-- Стрелки управления (слайдер) -->
+            <div class="flex items-center gap-3 shrink-0">
+                <button type="button" class="w-10 h-10 rounded-full flex items-center justify-center text-[#424551] bg-gray-100" aria-label="Previous project">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                </button>
+                <button type="button" class="w-10 h-10 rounded-full bg-[#FF5A30] text-white flex items-center justify-center" aria-label="Next project">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Сетка карточек проектов -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 sm:mb-16">
+            
+            <!-- Проект 1: Red Finger Building -->
+            <div class="bg-white rounded-md overflow-hidden shadow-[0_4px_16px_rgba(0,0,0,0.04)]">
+                <div class="aspect-[4/3] w-full overflow-hidden bg-gray-100">
+                    <img src="./imgsmuhammad/image (1).jpg" alt="Red Finger Building" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 text-center flex flex-col justify-center min-h-[110px]">
+                    <h3 class="text-lg font-bold text-[#1E212C] mb-1">Red Finger Building</h3>
+                    <p class="text-xs text-[#787A80]">Business Centers</p>
+                </div>
+            </div>
+
+            <!-- Проект 2: Cubes Building (Активное состояние / Hover из макета) -->
+            <div class="bg-white rounded-md overflow-hidden shadow-[0_16px_32px_rgba(0,0,0,0.12)] flex flex-col cursor-pointer transform -translate-y-1 md:-translate-y-2 border border-gray-100">
+                <div class="aspect-[4/3] w-full overflow-hidden bg-gray-100">
+                    <img src="./imgsmuhammad/image (1).png" alt="Cubes Building" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 text-center flex flex-col items-center justify-center min-h-[140px] space-y-3">
+                    <div>
+                        <h3 class="text-lg font-bold text-[#1E212C] mb-1">Cubes Building</h3>
+                        <p class="text-xs text-[#787A80]">Business Centers</p>
+                    </div>
+                    <!-- Кнопка внутри карточки -->
+                    <a href="#" class="inline-block px-6 py-2 border border-[#FF5A30] text-[#FF5A30] hover:bg-[#FF5A30] hover:text-white text-xs font-bold uppercase tracking-wider rounded transition-colors duration-300">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Проект 3: The Pencil Building -->
+            <div class="bg-white rounded-md overflow-hidden shadow-[0_4px_16px_rgba(0,0,0,0.04)]">
+                <div class="aspect-[4/3] w-full overflow-hidden bg-gray-100">
+                    <img src="./imgsmuhammad/image (1).png" alt="The Pencil Building" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 text-center flex flex-col justify-center min-h-[110px]">
+                    <h3 class="text-lg font-bold text-[#1E212C] mb-1">The Pencil Building</h3>
+                    <p class="text-xs text-[#787A80]">Stores & Malls</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Нижний блок: Призыв к действию -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 pt-4 border-t border-gray-50">
+            <h4 class="text-lg sm:text-xl md:text-2xl font-bold text-[#1E212C] text-center sm:text-left">
+                Explore all our works
+            </h4>
+            <a href="#" class="px-8 py-3.5 text-xs font-bold tracking-wider uppercase text-white bg-[#FF5A30] rounded-md hover:bg-[#e04822] transition-colors shadow-md whitespace-nowrap">
+                View Portfolio
+            </a>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
