@@ -223,7 +223,142 @@
     </div>
 </section>
 
+<!-- СЕКЦИЯ С ФОРМОЙ ЗАПРОСА (Адаптивная) -->
+<section class="relative md:top-25 w-full py-12 px-4 sm:px-6 lg:px-8 antialiased" style="font-family: 'Ubuntu', sans-serif;">
+    <div class="max-w-7xl mx-auto bg-white p-6 sm:p-10 lg:p-12 rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+        
+        <!-- Заголовок формы -->
+        <h2 class="text-xl sm:text-2xl md:text-[28px] font-bold text-[#1E212C] text-center mb-6 sm:mb-8 tracking-tight">
+            Want to know more? Ask us a question:
+        </h2>
 
+        <!-- Форма -->
+        <form class="flex flex-col lg:flex-row lg:items-end gap-5">
+            
+            <!-- Поле: Name -->
+            <div class="flex-1 min-w-0">
+                <label for="name" class="block text-xs sm:text-sm text-[#424551] mb-2 font-normal">
+                    Name
+                </label>
+                <input type="text" id="name" placeholder="Your name" 
+                       class="w-full h-11 sm:h-12 px-4 bg-[#F4F5F7] border border-[#D7D9DF] rounded-md text-sm text-[#1E212C] placeholder-[#9A9CA5] focus:outline-none focus:border-[#FF5A30] focus:bg-white transition-colors">
+            </div>
+
+            <!-- Поле: Phone -->
+            <div class="flex-1 min-w-0">
+                <label for="phone" class="block text-xs sm:text-sm text-[#424551] mb-2 font-normal">
+                    Phone
+                </label>
+                <input type="tel" id="phone" placeholder="Your phone" 
+                       class="w-full h-11 sm:h-12 px-4 bg-[#F4F5F7] border border-[#D7D9DF] rounded-md text-sm text-[#1E212C] placeholder-[#9A9CA5] focus:outline-none focus:border-[#FF5A30] focus:bg-white transition-colors">
+            </div>
+
+            <!-- Поле: Message -->
+            <div class="flex-[1.5] min-w-0">
+                <label for="message" class="block text-xs sm:text-sm text-[#424551] mb-2 font-normal">
+                    Message
+                </label>
+                <input type="text" id="message" placeholder="Your message" 
+                       class="w-full h-11 sm:h-12 px-4 bg-[#F4F5F7] border border-[#D7D9DF] rounded-md text-sm text-[#1E212C] placeholder-[#9A9CA5] focus:outline-none focus:border-[#FF5A30] focus:bg-white transition-colors">
+            </div>
+
+            <!-- Кнопка отправки: SEND -->
+            <div class="w-full lg:w-auto shrink-0 mt-2 lg:mt-0">
+                <button type="submit" 
+                        class="w-full lg:w-[130px] h-11 sm:h-12 bg-[#FF5A30] hover:bg-[#e04822] text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-md transition-colors shadow-md focus:outline-none">
+                    SEND
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+<!-- СЕКЦИЯ OUR SERVICES (Адаптивная с фоновой картинкой) -->
+<section class="w-full bg-cover bg-center py-12 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 antialiased" 
+         style="background-image: url('./imgsmuhammad/background.jpg'); font-family: 'Ubuntu', sans-serif;">
+    <div class="max-w-7xl mx-auto">
+        
+        <!-- Заголовок и описание -->
+        <div class="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4 mb-12 sm:mb-20">
+            <h2 class="text-2xl sm:text-4xl md:text-[46px] font-bold text-[#1E212C] tracking-tight leading-tight">
+                Our services
+            </h2>
+            <p class="text-xs sm:text-sm md:text-base text-[#787A80] font-normal px-2">
+                Createx Construction Bureau is a construction giant with a full range of construction services.
+            </p>
+        </div>
+
+        <!-- Сетка карточек (4 колонки на ПК, 2 на планшетах, 1 на мобилках) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 sm:mb-16">
+            
+            <!-- Карточка 1: Construction -->
+            <div class="bg-white rounded-md p-6 sm:p-8 flex flex-col items-center justify-center min-h-[260px] sm:min-h-[285px] border border-gray-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.08)] transition-all group cursor-pointer">
+                <div class="text-[#FF5A30] mb-5">
+                    <!-- Иконка Кирпичная стена -->
+<img src="./imgsmuhammad/Vector.png" alt="">
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-[#1E212C] group-hover:text-[#FF5A30] transition-colors text-center">
+                    Construction
+                </h3>
+            </div>
+
+            <!-- Карточка 2: Project Development -->
+            <div class="bg-white rounded-md p-6 sm:p-8 flex flex-col items-center justify-center min-h-[260px] sm:min-h-[285px] border border-gray-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.08)] transition-all group cursor-pointer">
+                <div class="text-[#FF5A30] mb-5">
+                    <!-- Иконка Чертеж / План -->
+<img src="./imgsmuhammad/ic-plan.svg" alt="">
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-[#1E212C] group-hover:text-[#FF5A30] transition-colors text-center">
+                    Project Development
+                </h3>
+            </div>
+
+            <!-- Карточка 3: Interior Design (Выделенная/Hover вариант из макета) -->
+            <div class="relative rounded-md flex flex-col items-center justify-end min-h-[260px] sm:min-h-[285px] overflow-hidden bg-cover bg-center shadow-[0_12px_24px_rgba(0,0,0,0.15)] cursor-pointer"
+                 style="background-image: linear-gradient(rgba(30, 33, 44, 0.75), rgba(30, 33, 44, 0.75)), url('./imgsmuhammad/image.jpg');">
+                <!-- Контент поверх фона карточки -->
+                <div class="p-6 sm:p-8 w-full flex flex-col items-center justify-center absolute inset-0 z-10">
+                    <div class="text-white mb-5">
+                        <!-- Иконка Палитра/Интерьер -->
+<img src="./imgsmuhammad/ic-pantone.png" alt="">
+
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white text-center">
+                        Interior Design
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Карточка 4: Repairs -->
+            <div class="bg-white rounded-md p-6 sm:p-8 flex flex-col items-center justify-center min-h-[260px] sm:min-h-[285px] border border-gray-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.08)] transition-all group cursor-pointer">
+                <div class="text-[#FF5A30] mb-5">
+                    <!-- Иконка Малярный валик -->
+<img src="./imgsmuhammad/ic-painting.svg" alt="">
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-[#1E212C] group-hover:text-[#FF5A30] transition-colors text-center">
+                    Repairs
+                </h3>
+            </div>
+
+        </div>
+
+        <!-- Нижний блок с призывом к действию -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-center sm:text-left">
+            <h4 class="text-lg sm:text-2xl font-bold text-[#1E212C]">
+                Learn more about our services
+            </h4>
+            <!-- Твоя оригинальная кнопка -->
+            <div class="flex flex-wrap gap-4">
+                <a href="#" class="px-8 py-3.5 text-xs font-bold tracking-wider uppercase text-white bg-[#FF5A30] rounded-md hover:bg-[#e04822] transition-all shadow-md whitespace-nowrap">
+                    View Services
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 </body>
 </html>
